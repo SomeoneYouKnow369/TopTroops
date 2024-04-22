@@ -11,9 +11,17 @@
       
       iframe {
         width: 100%;
-        min-height: calc(100vh - 4vw);
+        min-height: calc(100vh - 4vw - 120px);
         display: block;
         border: 0;
+      }
+
+      h2 {
+        margin-top: 30px;
+      }
+
+      .content {
+        min-height: 90px;
       }
 
       .btn-group {
@@ -43,16 +51,18 @@
   <body>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBbxE99QR9HP6DoWtMgc5_tKc0AdAHihXoFIjp_OImwrAyx7vm8a_7mXw0Sx2VaIFSB1bK5D6FRZXx/pubhtml?widget=true&amp;headers=false"></iframe>
 
-    <h2>Download static files</h2>
+    <div class="content">
+      <h2>Download static files</h2>
 
-    <div class="btn-group">
-      <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.jpg" download>
-        JPG-Version
-      </a>
+      <div class="btn-group">
+        <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.jpg" download>
+          JPG-Version
+        </a>
 
-      <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.pdf" download>
-        PDF-Version
-      </a>
+        <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.pdf" download>
+          PDF-Version
+        </a>
+      </div>
     </div>
   </body>
 </html>
