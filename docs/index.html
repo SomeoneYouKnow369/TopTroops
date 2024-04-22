@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TOP TROOPS HERO TIER LIST</title>
+    <title>TOP TROOPS HERO TIERLIST</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <style>
       body {
         padding: 2vw;
+        font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
       }
       
       iframe {
@@ -14,9 +15,44 @@
         display: block;
         border: 0;
       }
+
+      .btn-group {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      .btn {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #373737;
+        border:1px solid #373737;
+        transition: all 300ms ease-in-out;
+      }
+
+      .btn:hover {
+        background-color: #373737;
+        color: #f2f2f2;
+      }
     </style>
   </head>
   <body>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBbxE99QR9HP6DoWtMgc5_tKc0AdAHihXoFIjp_OImwrAyx7vm8a_7mXw0Sx2VaIFSB1bK5D6FRZXx/pubhtml?widget=true&amp;headers=false"></iframe>
+
+    <h2>Download static files</h2>
+
+    <div class="btn-group">
+      <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.jpg" download>
+        JPG-Version
+      </a>
+
+      <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.pdf" download>
+        PDF-Version
+      </a>
+    </div>
   </body>
 </html>
