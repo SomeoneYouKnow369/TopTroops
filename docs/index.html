@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TOP TROOPS HERO TIER LIST</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <style>
-      body {
-        padding: 1vw 2vw;
-        font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-      }
-      
-      iframe {
-        width: 100%;
-        min-height: calc(100vh - 2vw - 120px);
-        display: block;
-        border: 0;
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Troops - Resources for the Community</title>
 
-      h2 {
-        margin-top: 0;
-      }
-
-      .content {
-        min-height: 90px;
-        margin-bottom: 30px;
-      }
-
-      .btn-group {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        align-items: flex-start;
-      }
-
-      .btn {
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        color: #373737;
-        border:1px solid #373737;
-        transition: all 300ms ease-in-out;
-      }
-
-      .btn:hover {
-        background-color: #373737;
-        color: #f2f2f2;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/toptroops.css">
   </head>
   <body>
-    <div class="content">
-      <h2>Download static version 2.1.4</h2>
 
-      <div class="btn-group">
-        <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.jpg" download>
-          JPG-Version
-        </a>
+    <input checked="checked" id="iframe01" type="radio" name="tabs">
+    <input id="iframe02" type="radio" name="tabs">
+    <input id="iframe03" type="radio" name="tabs">
+    <input id="iframe04" type="radio" name="tabs">
+    <input id="iframe05" type="radio" name="tabs">
+    <input id="iframe06" type="radio" name="tabs">
+    
+    <nav class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="hidden sm:block">
+              <div class="flex space-x-4">
+                <label for="iframe01" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Hero Tierlist</label>
+                <!-- <label for="iframe02" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Hero Descriptions</label> -->
+                <label for="iframe03" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Changelog</label>
+                <label for="iframe04" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Contributions</label>
+                <label for="iframe05" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Squad Coins</label>
+                <label for="iframe06" role="tab" class="cursor-pointer inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Yonder Yacht</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-        <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.pdf" download>
-          PDF-Version
-        </a>
+    <div class="content mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+
+      <div role="tabpanel" class="iframe iframe01 overflow-hidden">
+        <div class="downloads mb-8">
+          <h2 class="mt-0 mb-4 text-sm">Download the static version 2.1.7</h2>
+
+          <div class="btn-group">
+            <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.jpg" download>
+              JPG-Version
+            </a>
+          
+            <a class="btn" href="https://siedlermaster.github.io/toptroops/assets/toptroops-hero-tierlist.pdf" download>
+              PDF-Version
+            </a>
+          </div>
+        </div>
+        <div class="overflow-hidden">
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBbxE99QR9HP6DoWtMgc5_tKc0AdAHihXoFIjp_OImwrAyx7vm8a_7mXw0Sx2VaIFSB1bK5D6FRZXx/pubhtml?widget=true&amp;headers=false"></iframe>
+        </div>
+      </div>
+      <div role="tabpanel" class="iframe iframe03 overflow-hidden">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRX8jiHEcRKcc_gdVMH_zN1l0qbgrMyTFFBZSzFetwIs1yvzICcsBEV4oI5htBImOtRQlt8KW2A6MrT/pubhtml?widget=true&amp;headers=false"></iframe>
+      </div>
+      <div role="tabpanel" class="iframe iframe04 overflow-hidden">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgVM4ojbU1KjmAxfpcmaybR27LJzfw1KvklJKm9XNUxkKg0yrGWhpIWVXL6zKqMtaSzZPzzMlnPZ_c/pubhtml?widget=true&amp;headers=false"></iframe>
+      </div>
+      <div role="tabpanel" class="iframe iframe05 overflow-hidden">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAf8udbIiIyghhTE30h5of0H-jIr2RRXBxVDog2Q3RXdyoCeoGrKPbmNDP5f6HZnmQkkfD-iWiHX_3/pubhtml?widget=true&amp;headers=false"></iframe>
+      </div>
+      <div role="tabpanel" class="iframe iframe06 overflow-hidden">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY3O0MBFW-bZoWSWhA1-TFr-iQ-SFXm7fDAmsLSWDus-IHFrrj7NqVc8-sl_oAbAyq8pZ8XRZLBtF_/pubhtml?widget=true&amp;headers=false"></iframe>
       </div>
     </div>
-
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBbxE99QR9HP6DoWtMgc5_tKc0AdAHihXoFIjp_OImwrAyx7vm8a_7mXw0Sx2VaIFSB1bK5D6FRZXx/pubhtml?widget=true&amp;headers=false"></iframe>
   </body>
 </html>
