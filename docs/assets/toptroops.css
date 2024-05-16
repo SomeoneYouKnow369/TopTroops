@@ -64,7 +64,9 @@ iframe {
 #iframe04:checked ~ nav label[for="iframe04"],
 #iframe05:checked ~ nav label[for="iframe05"],
 #iframe06:checked ~ nav label[for="iframe06"],
-#iframe07:checked ~ nav label[for="iframe07"] {
+#iframe07:checked ~ nav label[for="iframe07"],
+#iframe08:checked ~ nav label[for="iframe08"],
+#iframe09:checked ~ nav label[for="iframe09"] {
   border-color:#373737;
   color: #373737;
 }
@@ -75,6 +77,8 @@ iframe {
 #iframe04:checked ~ .content .iframe04,
 #iframe05:checked ~ .content .iframe05,
 #iframe06:checked ~ .content .iframe06,
-#iframe07:checked ~ .content .iframe07 {
+#iframe07:checked ~ .content .iframe07,
+#iframe08:checked ~ .content .iframe08,
+#iframe09:checked ~ .content .iframe09 {
   display: block;
 }
