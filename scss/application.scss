@@ -6,6 +6,12 @@ iframe {
   min-height: calc(100% + 57px);
   margin-top: -31px;
   margin-bottom: -26px;
+
+  &.survey {
+    min-height: calc(100% + 55px);
+    margin-top: 0;
+    margin-bottom: -55px;
+  }
 }
 
 .tierlist .tierlist,
@@ -19,7 +25,8 @@ iframe {
 .unit-effects .unit-effects,
 .market-history .market-history,
 .buildings .buildings,
-.community .community {
+.community .community,
+.surveys .surveys {
   color: rgb(23 23 23 / var(--tw-text-opacity));
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }

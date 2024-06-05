@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="h-full bg-white" lang="de">
+  <%- include('../components/head.ejs', { title: 'Surveys'}) %>
+  <body class="h-full surveys">
+    <%- include('../components/mobile-navigation.ejs') %>
+
+    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-64 lg:flex-col">
+      <%- include('../components/navigation.ejs') %>
+    </div>
+
+    <%- include('../components/header.ejs', { title: 'Surveys'}) %>
+
+    <main class="h-full py-10 lg:pl-64">
+      <div class="h-full overflow-hidden px-4 sm:px-6 lg:px-8">
+        <div class="h-full overflow-hidden">
+          <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLSfO-iIXhyuUy2IhFBcnO9t9j64t4cRv_beeFrXqk5RcrpFihA/viewform?embedded=true" width="640" height="1772" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </main>
+
+    <%- include('../components/footer.ejs') %>
+  </body>
+</html>
